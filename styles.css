@@ -1,0 +1,348 @@
+body, html {
+    height: 100%;
+}
+nav {
+    padding: .5%;
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    color: white;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    justify-items: right;
+    margin-left: 35%;
+    margin-top: 2%;
+    width: 30%;
+    
+}
+.nav-links a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+}
+.hero-text button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(254, 255, 251);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+.intro h1 {
+    font-size: 60px;
+}
+
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 5%;
+    text-align: center;
+}
+.highlights img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.highlights p {
+    font-size: 20px;
+}
+.highlights button {
+    padding: 10px;
+    width: 150px;
+}
+.calltobook{
+    padding: 3%;
+    text-align: center;
+}
+.calltobook h1 {
+    font-size: 45px;
+}
+.calltobook button {
+    width: 200px;
+    height: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    background-color: darkorange;
+    border-color: currentColor;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: cornflowerblue;
+    color: white;
+}
+footer h1 {
+    font-size: 40px;
+}
+.footer-links h2 {
+    text-decoration: underline;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Things to Do - styles */
+/* The hero image */
+.hero-image2 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text2 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+  }
+  .hero-text2 button {
+      width: 200px;
+      height: 50px;
+      background-color: rgb(254, 255, 251);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 20px;
+  }
+.islandtodo {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+  .islandtodo img {
+    width: 550px;
+    height: 400px;
+  }
+  .beachTypes {
+    display: flex;
+    align-items: center;
+  }
+  .beach-info{
+   width: 30%;
+   padding-left: 1%;
+  }
+  .beach-pics {
+    width: 70%;
+  }
+  .boatbustours {
+    display: flex;
+    align-items: center;
+  }
+  .bbt-pics {
+    width: 70%;
+  }
+  .bbt-info {
+    width: 30%;
+    padding-left: 1%;
+  }
+  .rainforest {
+    display: flex;
+    align-items: center;
+  }
+  .rf-info{
+   width: 30%;
+   padding-left: 1%;
+  }
+  .rf-pics {
+    width: 70%;
+  }
+  .volcano {
+    display: flex;
+    align-items: center;
+  }
+  .volcano-pics {
+    width: 70%;
+  }
+  .volcano-info {
+    width: 30%;
+    padding-left: 1%;
+  }
+  .volcano-info a {
+    text-decoration: none;
+    color: black;
+  }
+  .entertainment {
+    display: flex;
+    align-items: center;
+  }
+  .entertainment-info{
+   width: 30%;
+   padding-left: 1%;
+  }
+  .entertainment-pics {
+    width: 70%;
+  }
+
+  /*Plan your visit styles*/
+  /* The hero image */
+.hero-image3 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("adli-wahid-m1Pk_ZqcG-Y-unsplash.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text3 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+  }
+  .hero-text3 button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(254, 255, 251);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  }
+.title {
+    text-align: center;
+    padding: 1%;
+}
+.planyourvisit-highlights {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.planyourvisit-highlights img {
+    width: 200px;
+    height: 200px;
+}
+section div{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+}
+section h1 {
+    text-align: center;
+    background-color: lightgray;
+}
+section p {
+    width: 25%;
+    text-align: justify;
+}
+
+  /*Our island styles */
+  /* The hero image */
+.hero-image4 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("adli-wahid-m1Pk_ZqcG-Y-unsplash.jpg");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text4 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+  }
+  .hero-text4 button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(254, 255, 251);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  }
+  .about {
+    text-align: center;
+  }
+  .about h2 {
+    text-decoration: underline;
+  }
+.about-info div {
+    width: 25%;
+}
+ .about-info {
+    display: flex;
+    justify-content: space-around;
+ }
