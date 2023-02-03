@@ -1,123 +1,357 @@
 body, html {
     height: 100%;
+    font-family: 'Lato', sans-serif;
+     
 }
-nav {
-    padding: .5%;
-    background-color: cornflowerblue;
-    display: flex;
-}
-
-.logo img {
-    width: 80px;
-    height: 80px;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    width: 30%;
-    color: white;
-}
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    justify-items: right;
-    margin-left: 35%;
-    margin-top: 2%;
-    width: 30%;
-    
-}
-.nav-links a {
-    text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-}
-
-
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
+  background-image: linear-gradient(rgba(192, 189, 189, 0.5), rgba(236, 234, 77, 0.363)), url("sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
 
+  /* Set a specific height */
+  height: 60%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  text-align: center;
+  color: white;
+}
+.topnav img{
+  width: 80px;
+  height: 70px;
+}
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.712);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Place text in the middle of the image */
-.hero-text {
+/* Navbar links */
+.topnav a {
+  color: #0a0a0a;
+  text-shadow: 1px .1px black;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 50px;
+  padding: .5% 2% .5%;
+  text-decoration: none;
+  font-size: 20px;
 }
-.hero-text button {
-    width: 200px;
-    height: 50px;
-    background-color: rgb(254, 255, 251);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+
+.topnav a:hover {
+  background-color: rgb(16, 139, 148);
+  color: black;
 }
+
 .intro {
-    text-align: center;
-    padding: 20px;
+  padding-top: 5%;
 }
 .intro h1 {
-    font-size: 60px;
+  font-size: 600%;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: black 10px 10px 10px;
+}
+@media screen and (max-width: 992px) {
+  .topnav img {
+    width: 60px;
+    height: 50px;
+  }
+  .topnav a {
+    font-size: 15px;
+  }
+  .intro {
+    padding-top: 10%;
+  }
+  .intro h1 {
+    font-size: 500%;
+  }
+}
+.intro-aboutus {
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 4%;
 }
 
-.highlights {
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 5%;
-    text-align: center;
+.intro-aboutus-text {
+  width: 50%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
-.highlights img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
+.intro-aboutus-text h1 {
+  text-align: center;
+  font-size: 55px;
+  color:#3fa8ac;
+  text-shadow: #1e7c77 .5px .5px .5px;
+}
+
+.intro-aboutus-text p {
+  font-size: 25px;
+  text-align: justify;
+}
+
+
+.intro-aboutus-text button {
+  font-family: 'Lato', sans-serif;
+  padding: 12px 45px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #11343d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px rgba(73, 72, 72, 0.459);
+}
+.intro-aboutus-text button:hover {
+  background-color: #6fbbe7;
+  color: black;
+}
+.intro-aboutus-text button:active {
+  background-color: #04bceb;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+@media screen and (max-width: 992px) {
+  .intro-aboutus-text h1 {
+    font-size: 220%;
+  }
+  .intro-aboutus-text p {
+    font-size: 140%;
+  }
+  .intro-aboutus-text button {
+    font-size: 100%;
+  }
+}
+
+.intro-aboutus-card {
+  width: 30%;
+  text-align: center;
+  padding-bottom: 2%;
+  border:rgba(20, 99, 119, 0.5) 15px solid;
+}
+.intro-aboutus-card img {
+  width: 100%;
+}
+.intro-aboutus-card p {
+  font-size: 23px;
+}
+.intro-aboutus-card button {
+  font-family: 'Lato', sans-serif;
+  padding: 12px 45px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #11343d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px rgba(73, 72, 72, 0.459);
+}
+.intro-aboutus-card button:hover {
+  background-color: #6fbbe7;
+  color: black;
+}
+.intro-aboutus-card button:active {
+  background-color: #04bceb;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+@media screen and (max-width: 992px) {
+  .intro-aboutus-card button {
+    font-size: 100%;
+  }
+}
+
+.home-mid {
+  font-size: 160%;
+  text-align: center;
+  color:#3fa8ac;
+  text-shadow: #1e7c77 .5px .5px .5px;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+.video img {
+  height: 25%;
+  width: 25%;
+  padding: 0 2%;
+}
+@media screen and (max-width: 992px) {
+  .video iframe {
+    height: 415px;
+  }
+}
+.highlights {
+    padding: 5%;
+}
+@media screen and (max-width: 992px) {
+  .highlights {
+    padding: 0%;
+  }
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.highlight-1 {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  padding-bottom: 10%;
+}
+.hightlight-1-image {
+  width: 35%;
+  overflow: hidden;
+  margin-top: 2%;
+}
+
+.highlight-1-info {
+  text-align: left;
+  width: 60%;
+  padding-left: 2%;
+}
+.highlight-2 {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  padding-bottom: 10%;
+}
+.hightlight-2-image {
+  width: 35%;
+  margin-top: 2%;
+}
+.highlight-2-info {
+  text-align: left;
+  width: 60%;
+  padding-left: 2%;
+}
+.highlight-3 {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  padding-bottom: 10%;
+}
+.highlight-3-image {
+  width: 35%;
+  margin-top: 2%;
+}
+.highlight-3-info {
+  text-align: justify;
+  width: 60%;
+  padding-left: 2%;
+}
+
+.highlights h2 {
+  font-size: 200%;
+  color:#3fa8ac;
+  text-shadow: #1e7c77 .5px .5px .5px;
 }
 .highlights p {
-    font-size: 20px;
+    font-size: 100%;
 }
 .highlights button {
-    padding: 10px;
-    width: 150px;
+  font-family: 'Lato', sans-serif;
+  padding: 1% 4%;
+  font-size: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #11343d;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 3px rgba(73, 72, 72, 0.459);
 }
+.highlights button:hover {
+  background-color: #6fbbe7;
+  color: black;
+}
+.highlights button:active {
+  background-color: #04bceb;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+.islandMap {
+  height: 400px;
+  text-align: center;
+  background-color: #88b3f7;
+  border:rgba(83, 83, 83, 0.123) 10px solid;
+}
+.islandMap img {
+  width: 40%;
+  height: 400px;
+}
+@media screen and (max-width: 992px) {
+  .islandMap {
+    height: 250px;
+  }
+  .islandMap img {
+    height: 250px;
+  }
+}
+
 .calltobook{
     padding: 3%;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .calltobook h1 {
-    font-size: 45px;
+    font-size: 55px;
 }
 .calltobook button {
-    width: 200px;
-    height: 60px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Lato', sans-serif;
+  width: 300px;
+  padding: 1%;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #08718b;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 3px rgba(73, 72, 72, 0.459);
+}
+.calltobook button:hover {
+  background-color: #6fbbe7;
+  color: black;
+}
+.calltobook button:active {
+  background-color: #04bceb;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+@media screen and (max-width: 992px) {
+  .calltobook h1 {
     font-size: 30px;
-    background-color: darkorange;
-    border-color: currentColor;
+  }
+  .calltobook button {
+    width: 200px;
+    font-size: 20px;
+  }
 }
 footer {
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    background-color: cornflowerblue;
+    background-color: rgb(50, 50, 51);
     color: white;
 }
 footer h1 {
     font-size: 40px;
 }
-.footer-links h2 {
-    text-decoration: underline;
-}
+
 .footer-links {
     display: flex;
     flex-direction: column;
@@ -135,40 +369,32 @@ footer h1 {
     width: 80px;
     height: 80px;
 }
+@media screen and (max-width: 992px) {
+  footer h1, h2 {
+    font-size: 18px;
+  }
+  .footer-links a {
+    font-size: 15px;
+  }
+}
 
 /* Things to Do - styles */
 /* The hero image */
 .hero-image2 {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg");
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(192, 189, 189, 0.5), rgba(249, 252, 250, 0.096)), url("rafael-cisneros-mendez-y5PG8ZecXQI-unsplash.jpg");
+
+  /* Set a specific height */
+  height: 60%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
   
-    /* Set a specific height */
-    height: 50%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* Place text in the middle of the image */
-  .hero-text2 {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 50px;
-  }
-  .hero-text2 button {
-      width: 200px;
-      height: 50px;
-      background-color: rgb(254, 255, 251);
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 20px;
-  }
 .islandtodo {
     padding-top: 1%;
     padding-bottom: 1%;
@@ -240,37 +466,21 @@ footer h1 {
 
   /*Plan your visit styles*/
   /* The hero image */
-.hero-image3 {
+  .hero-image3 {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("adli-wahid-m1Pk_ZqcG-Y-unsplash.jpg");
+    background-image: linear-gradient(rgba(192, 189, 189, 0.5), rgba(108, 116, 236, 0.26)), url("shai-pal-6xoO8HfIrlE-unsplash.jpg");
   
     /* Set a specific height */
-    height: 50%;
+    height: 60%;
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    text-align: center;
+    color: white;
   }
   
-  /* Place text in the middle of the image */
-  .hero-text3 {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 50px;
-  }
-  .hero-text3 button {
-    width: 200px;
-    height: 50px;
-    background-color: rgb(254, 255, 251);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-  }
 .title {
     text-align: center;
     padding: 1%;
@@ -300,47 +510,140 @@ section p {
 
   /*Our island styles */
   /* The hero image */
+
 .hero-image4 {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("adli-wahid-m1Pk_ZqcG-Y-unsplash.jpg");
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(21, 190, 21, 0.295)), url("kazuo-ota-BAfs4s30NRA-unsplash.jpg");
+
+  /* Set a specific height */
+  height: 60%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
   
-    /* Set a specific height */
-    height: 50%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* Place text in the middle of the image */
-  .hero-text4 {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 50px;
-  }
-  .hero-text4 button {
-    width: 200px;
-    height: 50px;
-    background-color: rgb(254, 255, 251);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-  }
-  .about {
-    text-align: center;
-  }
-  .about h2 {
-    text-decoration: underline;
-  }
+.about {
+  text-align: center;
+}
+.about h2 {
+  text-decoration: underline;
+  text-align: center;
+}
 .about-info div {
     width: 25%;
 }
  .about-info {
     display: flex;
     justify-content: space-around;
+    font-size: 150%;
+    text-align: left;
  }
+ 
+
+ /*Guide page styles*/
+ .hero-image5 {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(233, 232, 232, 0.5), rgba(10, 10, 10, 0.068)), url("shannon-kunkle-h1blzO2YTtA-unsplash.jpg");
+
+  /* Set a specific height */
+  height: 60%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.guide-intro {
+  text-align: center;
+  background-color: #04c2a9ab;
+  padding: .5%;
+}
+.guide-intro h1 {
+  font-size: 300%;
+}
+.guide-intro p {
+  font-size: 200%;;
+}
+.days {
+  display: flex;
+  justify-content: space-evenly; 
+  margin: 5% 10% 5% 10%;
+}
+.day-options {
+  display: flex;
+  flex-direction: column;
+  border:rgb(135, 135, 136) 3px solid;
+  width: 200px;
+  background-color: #d7dddf80;
+  padding: 2%; 
+}
+.day-options form {
+  display: flex;
+  flex-direction: column;
+  font-size: 120%;
+  padding-bottom: 4%;
+}
+.day-options option {
+  font-size: 120%;
+}
+.morning {
+  color:rgb(255, 255, 255);
+}
+.morning h2 {
+  background-color: rgb(235, 168, 24);
+  text-align: center;
+}
+.afternoon {
+  color: rgb(255, 255, 255);
+}
+.afternoon h2 {
+  background-color: green;
+  text-align: center;
+}
+.evening {
+  color: rgb(255, 255, 255);
+}
+.evening h2 {
+  background-color: rgb(0, 23, 128);
+  text-align: center;
+}
+
+.buttons {
+  padding: 5%;
+  text-align: center;
+}
+.buttons button {
+  font-family: 'Lato', sans-serif;
+  width: 250px;
+  padding: 2%;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #08718b;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 3px rgba(73, 72, 72, 0.459);
+}
+.buttons button:hover {
+  background-color: #6fbbe7;
+  color: black;
+}
+.buttons button:active {
+  background-color: #04bceb;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+@media screen and (max-width: 992px) {
+  .buttons button {
+    width: 200px;
+    font-size: 20px;
+  }
+}
